@@ -1,6 +1,6 @@
 # Análisis ConnectaTel
 
-## Objetivo del proyecto
+# Objetivo del proyecto
 
 Como analista de datos, el objetivo de este proyecto es evaluar el **comportamiento de los clientes** de ConnectaTel, una empresa de telecomunicaciones en Latinoamérica, con información registrada hasta el año **2024**.
 
@@ -10,7 +10,7 @@ El análisis busca:
 - Segmentar a los clientes por **nivel de uso** y **edad**.
 - Traducir los hallazgos en **recomendaciones accionables** para el negocio, orientadas a la oferta de planes y oportunidades comerciales.
 
-##  Datasets utilizados
+#  Datasets utilizados
 
 | Archivo | Descripción |
 |---|---|
@@ -20,7 +20,7 @@ El análisis busca:
 
 > Los archivos se cargan desde la carpeta `/datasets/` dentro del entorno de ejecución.
 
-##  Etapas del análisis
+# Etapas del análisis
 
 1. **Carga y exploración** — lectura de los 3 datasets, revisión de forma (`shape`), tipos de datos y estructura general (`.info()`).
 2. **Identificación de problemas de calidad de datos** — valores nulos, sentinels (`-999` en `age`, `"?"` en `city`), y fechas fuera de rango (años imposibles como 2026).
@@ -30,7 +30,7 @@ El análisis busca:
 6. **Segmentación de clientes** — clasificación en grupos de uso (`Bajo uso`, `Uso medio`, `Alto uso`) y de edad (`Joven`, `Adulto`, `Adulto Mayor`).
 7. **Insight ejecutivo** — traducción de los hallazgos en conclusiones y recomendaciones de negocio para stakeholders.
 
-## Cómo ejecutar el notebook
+# Cómo ejecutar el notebook
 
 1. Abre el archivo `Project-ConnectaTel.ipynb` en [Google Colab](https://colab.research.google.com/) o en un entorno Jupyter local.
 2. Asegúrate de que los archivos `plans.csv`, `users_latam.csv` y `usage.csv` estén disponibles en la ruta `/datasets/` (súbelos manualmente si usas Colab, o ajusta la ruta si trabajas en local).
@@ -40,7 +40,7 @@ El análisis busca:
    ```
 4. Ejecuta las celdas en orden, de arriba hacia abajo (`Runtime → Run all` en Colab, o `Kernel → Restart & Run All` en Jupyter).
 
-## Guía de reproducción
+# Guía de reproducción
 
 - El notebook es secuencial: cada paso depende de las transformaciones realizadas en el paso anterior (limpieza → agregación → segmentación → visualización).
 - No se requieren credenciales ni conexiones externas; todo el procesamiento es local sobre los tres archivos CSV.
